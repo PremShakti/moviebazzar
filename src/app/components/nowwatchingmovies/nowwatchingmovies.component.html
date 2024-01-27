@@ -1,0 +1,16 @@
+<h1 class="text-center mt-4 mb-4 p-2">Now Watching Movies</h1>
+
+<div *ngIf="upcomingMovies && upcomingMovies.length > 0">
+  <div class="container">
+    <div class="row">
+      <div class="col-4 col-md-2" *ngFor="let data of upcomingMovies">
+        <app-cardfor-upcoming-movies [cardData]="data">
+        </app-cardfor-upcoming-movies>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="!upcomingMovies || upcomingMovies.length === 0">
+  No data available.
+</div>
+

@@ -1,0 +1,29 @@
+<div class="mx-auto position-relative">
+  <div>
+    <input
+      class="d-block mx-auto mt-4"
+      type="text"
+      placeholder="Search movies..."
+      (input)="onSearchInput($event)"
+    />
+  </div>
+  <ul class="ulfforli list-group">
+    <li class="list-group-item"
+      [routerLink]="['/product', movie.id]"
+      *ngFor="let movie of searchResults"
+    >
+      <span
+        ><img
+          style="width: 50px"
+          [src]="
+            'https://media.themoviedb.org/t/p/w220_and_h330_face/' +
+            movie.poster_path
+          "
+          alt="" /></span
+      >{{ movie.title }} - {{ movie.release_date }}
+    </li>
+  </ul>
+</div>
+
+<app-upcomingmovies></app-upcomingmovies>
+<app-nowwatchingmovies></app-nowwatchingmovies>

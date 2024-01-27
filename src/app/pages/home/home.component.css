@@ -1,0 +1,46 @@
+.ulfforli{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 40%;
+
+    color: rgb(27, 30, 36);
+    font-weight: bold;
+    font-family: sans-serif;
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    left: 30%;
+    z-index: 10000;
+    /* backdrop-filter: blur(10px); */
+}
+.ulfforli li{
+    cursor: pointer;
+}
+.ulfforli li:hover{
+    color: blue;
+}
+li:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    z-index: 60000;
+}
+@media screen and (max-width:850px) {
+    .ulfforli{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+     width: 99%;
+    
+        color: rgb(27, 30, 36);
+        font-weight: bold;
+        font-family: sans-serif;
+        list-style: none;
+        position: absolute;
+        top: 50px;
+        left:2px;
+        z-index: 10000;
+        backdrop-filter: blur(10px);
+    }
+    li:hover{
+        transform: scale(1);
+        transition: transform 0.3s ease;
+        z-index: 60000;
+    }
+}

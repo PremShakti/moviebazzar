@@ -1,0 +1,23 @@
+
+
+<div  [routerLink]="['/product', cardData.id]" class="card mt-4 main" style="border: 0;" >
+    <img  class="shadow-lg" [src]="'https://media.themoviedb.org/t/p/w220_and_h330_face/'+cardData.poster_path" class="card-img-top" alt="img" style="border-radius: 10px;">
+    <div class="card-body">
+      <h6 class="card-title">{{cardData.title}}</h6>
+      <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+      <span class="position-absolute top-0 start-100 translate-middle">
+      <circle-progress
+  [percent]="cardData.popularity.toString().slice(0,2)"
+  [radius]="15"
+  [outerStrokeWidth]="5"
+  [innerStrokeWidth]="5"
+  [outerStrokeColor]="'#78C000'"
+  [innerStrokeColor]="'#000000'"
+  [animation]="true"
+  [animationDuration]="300"
+
+
+></circle-progress>
+</span>
+    </div>
+  </div>

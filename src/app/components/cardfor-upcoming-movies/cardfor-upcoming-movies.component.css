@@ -1,0 +1,8 @@
+p{
+    font-size: small;
+}
+.main:hover{
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    z-index: 60000;
+}
