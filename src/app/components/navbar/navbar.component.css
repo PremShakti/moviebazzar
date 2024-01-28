@@ -1,8 +1,9 @@
 .navmain{
 padding: 5px;
-background-color: rgb(64, 64, 255);
+padding-left: 10px;
+/* background-color: rgb(64, 64, 255); */
 color: white;
-/* position: sticky; */
+position: sticky;
 top: 0;
 z-index: 5000000;
 }
