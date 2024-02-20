@@ -1,6 +1,7 @@
 # Imdbproject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+![FireShot Capture 011 - Imdbproject - moviebazzar vercel app](https://github.com/PremShakti/moviebazzar/assets/112472700/2e733a48-38db-48dd-95f4-74f373b023a7)
 
 ## Development server
 
